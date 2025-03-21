@@ -166,7 +166,7 @@ html body{
 }
 
 .whitebg {
-    border-radius: 100px;
+    border-radius: 20px!important;
     display: flex;
     margin-bottom: 120px;
 }
