@@ -1,59 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html body{
+html body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
     color: #1E1E1E;
 }
 
-.navbar{
-    background-color: white;
-    color: #1E1E1E;
-    position: -webkit-sticky;
-    position: sticky;
-    padding: 20px 380px;
-
-
-}
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-}
-
-.menu-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 70px;
-}
-
-.menu-list li{
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.menu-list a{
-    text-decoration: none;
-    color: #1E1E1E;
-    font-size: 16px;
-}
-
-.auth{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-}
+/* Bootstrap handles navbar responsiveness. Remove custom navbar/menu/auth styles. */
 
 .button1 {
     background-color: #6D46DB;
@@ -83,23 +40,23 @@ html body{
     cursor: pointer;
 }
 
-.hero{
+.hero {
     padding: 20px 380px;
     height: 100vh;
 
 }
 
-.slogan{
+.slogan {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
 }
 
-.slogan-text{
+.slogan-text {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
-    padding:  50px  0;
+    padding: 50px 0;
 }
 
 .slogan-logo {
@@ -118,7 +75,7 @@ html body{
     margin-top: 50px;
 }
 
-.license1{
+.license1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,24 +111,24 @@ html body{
     text-align: center;
     font-size: 52px;
     font-weight: 600;
-    color:#FFEC9F;
+    color: #FFEC9F;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 200px;
     padding-bottom: 20px;
 }
 
-.Debie{
+.Debie {
     background-color: white;
     padding: 150px 380px 100px 380px;
 }
 
 .whitebg {
-    border-radius: 20px!important;
+    border-radius: 20px !important;
     display: flex;
     margin-bottom: 120px;
 }
 
-.whitebg-image{
+.whitebg-image {
     width: 45%;
 }
 
@@ -185,7 +142,7 @@ html body{
     padding: 70px 50px 70px 50px;
 }
 
-.whitebg-text1{
+.whitebg-text1 {
     font-size: 45px;
     line-height: 56px;
     font-weight: 600;
@@ -291,4 +248,169 @@ html body{
     color: #626262;
     margin-bottom: 20px;
 
+}
+
+/* Responsive styles */
+
+@media (max-width: 1200px) {
+
+    .navbar,
+    .hero,
+    #features,
+    .Debie,
+    .footer,
+    .footer-text {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .navbar,
+    .hero,
+    #features,
+    .Debie,
+    .footer,
+    .footer-text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .conclusion-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-social {
+        margin-left: 0;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .whitebg {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .whitebg-image,
+    .whitebg-text {
+        width: 100%;
+        height: auto;
+    }
+
+    .wet {
+        padding: 30px 10px;
+    }
+
+    .feature,
+    .featuretext {
+        font-size: 32px;
+        padding-top: 60px;
+    }
+
+    .conclusion-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar,
+    .hero,
+    #features,
+    .Debie,
+    .footer,
+    .footer-text {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .hero {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+    }
+
+    .slogan {
+        margin-top: 30px;
+    }
+
+    .slogan-text {
+        font-size: 16px;
+        padding: 20px 0;
+    }
+
+    .feature,
+    .featuretext {
+        font-size: 22px;
+        padding-top: 30px;
+    }
+
+    .feature-text {
+        font-size: 14px;
+    }
+
+    .whitebg-text1 {
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+
+    .whitebg-text2,
+    .whitebg-text3 {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .help {
+        font-size: 14px;
+    }
+
+    .button,
+    .button1,
+    .button2 {
+        font-size: 14px;
+        padding: 8px 12px;
+        height: auto;
+        width: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-item {
+        margin-bottom: 10px;
+    }
+
+    .footer-social {
+        margin-left: 0;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+
+    .conclusion {
+        height: auto;
+        padding: 10px 5px;
+    }
+
+    .conclusion-text {
+        font-size: 18px;
+    }
 }
